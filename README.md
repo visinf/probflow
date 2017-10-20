@@ -15,12 +15,12 @@ Please download their code and add the directory to your search path, i.e.
 `addpath(genpath('path/to/flow_code/utils'))`
 
 To use ProbFlowFields with the given SOR solver you have to compile the corresponding
-mex file in ./probFlowFields/mex, i.e. mex -O sor_probflow.c
+mex file in ./probFlowFields/mex, i.e. `mex -O sor_probflow.c`
 
 Usage
 -------------------------------------------------------------------------------
 
-An exemplary usage of ProbClassicA and ProbFlowFields can be found in probFlow_demo.m.
+An exemplary usage of ProbClassicA and ProbFlowFields can be found in `probFlow_demo.m`.
 Please adapt the search path in line 9 appropriately.
 
 ProbClassicA:  
