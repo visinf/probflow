@@ -34,6 +34,9 @@ In our experiments, we used FlowFields \[1] matches, densified with the EpicFlow
 * http://av.dfki.de/publications/flow-fields-dense-correspondence-fields-for-highly-accurate-large-displacement-optical-flow-estimation/ (Link4)
 * https://thoth.inrialpes.fr/src/epicflow/.
 
+Please note that ONLY the interpolation step of EpicFlow should be used as the energy minimization step is replaced by ProbFlowFields!
+To do so, one has to comment the variational() function in l.126 of epicflow.cpp and recompile the EpicFlow code before generating dense flow fields.
+
 
 Parameters
 -------------------------------------------------------------------------------
